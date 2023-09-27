@@ -1,18 +1,18 @@
-# Project Name
+# SVG Logo Maker
 
 
 
 ## Description
 
-
+This application generates a logo as a .svg file. The file created is resulted from the options the user has selected.
 
 ## Installation
 
-
+N/A, runs in the terminal.
 
 ## Usage
 
-
+The user is prompted with questions 
 
 ## Mock-Up
 
