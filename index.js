@@ -24,4 +24,4 @@ const questions = [
     }
 ];
 
-inquirer.createPromptModule(questions)
+inquirer.prompt(questions)

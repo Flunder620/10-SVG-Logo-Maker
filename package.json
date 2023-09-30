@@ -1,0 +1,18 @@
+{
+  "name": "10-svg-logo-maker",
+  "version": "1.0.0",
+  "description": "This application generates a logo as a .svg file. The file created is resulted from the options the user has selected.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
