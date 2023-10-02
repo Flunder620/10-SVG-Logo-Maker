@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const Circle = require ('./lib/circle')
+const Square = require ('./lib/square')
+const Triangle = require ('./lib/triangle')
 
 const questions = [
     {
@@ -24,4 +27,26 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions)
+inquirer.prompt(questions).then((response) =>{
+    // console.log(response)
+    let shape;
+    if(response.shape === 'Circle'){
+        shape = new Circle()
+    }
+    if(response.shape === 'Triangle'){
+        shape = new Triangle()
+    }
+    if(response.shape === 'Square'){
+        shape = new Square()
+    }
+    shape.setColor(response.scolor)
+    return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+
+    ${shape.render()}
+  
+    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${response.tcolor}">${response.text}</text>
+  
+  </svg>`
+}).then((data) => {
+    fs.writeFileSync('logo.svg', data)
+})
