@@ -17,30 +17,16 @@ The user is prompted with questions
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality: 
-![This shows what home page will look like](./assets/images/)
+![This shows what home page will look like](./assets/images/preview.png)
 
-## Deployment Link
+## Video Link
 
-
-
-## Credits
-
-
+https://drive.google.com/file/d/1fCgKXJvzlsZ9AHrtSdfMSNwx5h8MTv0o/view?usp=drive_link
 
 ## Built With
 
-
-
-## License
-
-
-
-## Badges
-
-
-
-## How to Contribute
-
-
+-Jest
 
 ## Tests
+
+The test for each of the shape contructors are ran using Jest, the test can be ran by moding the paramaters in the contructors and test files.
