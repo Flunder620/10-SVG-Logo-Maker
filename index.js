@@ -48,5 +48,5 @@ inquirer.prompt(questions).then((response) =>{
   
   </svg>`
 }).then((data) => {
-    fs.writeFileSync('logo.svg', data)
+    fs.writeFileSync('./examples/logo.svg', data)
 })
